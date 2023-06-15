@@ -1,0 +1,166 @@
+\hypertarget{jeu__puissance4_8c}{}\section{Référence du fichier jeu\+\_\+puissance4.\+c}
+\label{jeu__puissance4_8c}\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Graphe des dépendances par inclusion de jeu\+\_\+puissance4.\+c\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{jeu__puissance4_8c_aa982f591a5bf70cd78d6e8b480f9e6d7}{C\+O\+L\+O\+N\+E\+\_\+\+D\+E\+B\+UT}~\hyperlink{jeu__puissance4__final_8c_a8f8cd1540fdc837cee034be5be8c2aa5}{N\+B\+C\+OL}/2
+\item 
+\#define \hyperlink{jeu__puissance4_8c_a8f8cd1540fdc837cee034be5be8c2aa5}{N\+B\+C\+OL}~7
+\item 
+\#define \hyperlink{jeu__puissance4_8c_aa5a2696e1a14c0a6c8ef2dde2b2c38fa}{N\+B\+L\+IG}~6
+\end{DoxyCompactItemize}
+\subsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{jeu__puissance4_8c_aa86915394a89b24de2eb81c8a08d99fd}{t\+\_\+jeu}\mbox{[}\hyperlink{jeu__puissance4__final_8c_aa5a2696e1a14c0a6c8ef2dde2b2c38fa}{N\+B\+L\+IG}-\/1\mbox{]}\mbox{[}\hyperlink{jeu__puissance4__final_8c_a8f8cd1540fdc837cee034be5be8c2aa5}{N\+B\+C\+OL}-\/1\mbox{]}
+\begin{DoxyCompactList}\small\item\em un tableau de tableau d\textquotesingle{}entier, qui est la grille de jeu \end{DoxyCompactList}\item 
+typedef int \hyperlink{jeu__puissance4_8c_afbde29876e15450c0c1aca832d0fd8b0}{t\+\_\+place}\mbox{[}\hyperlink{jeu__puissance4__final_8c_a8f8cd1540fdc837cee034be5be8c2aa5}{N\+B\+C\+OL}-\/1\mbox{]}
+\begin{DoxyCompactList}\small\item\em un tableau de entier, qui affiche le numéro des colonnes au dessus de la grille de jeu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{jeu__puissance4_8c_aed79abfebda75486743de9c2342778d0}{afficher} (\hyperlink{jeu__puissance4__final_8c_a080cb8410ac2de392624bdcd0ed1c6d2}{t\+\_\+jeu}, \hyperlink{jeu__puissance4__final_8c_a9a3350085ef47ec63152b63a1e79fa17}{t\+\_\+place}, char, int)
+\item 
+int \hyperlink{jeu__puissance4_8c_a8b1018abd2ef5f0b2e95bf7c21b133f9}{grille\+Pleine} (\hyperlink{jeu__puissance4__final_8c_a080cb8410ac2de392624bdcd0ed1c6d2}{t\+\_\+jeu})
+\begin{DoxyCompactList}\small\item\em la fonction regarde si la grille est pleine \end{DoxyCompactList}\item 
+void \hyperlink{jeu__puissance4_8c_a8837868eee506e930fdc41f8bc3a9fcc}{init\+Grille} (\hyperlink{jeu__puissance4__final_8c_a080cb8410ac2de392624bdcd0ed1c6d2}{t\+\_\+jeu}, \hyperlink{jeu__puissance4__final_8c_a9a3350085ef47ec63152b63a1e79fa17}{t\+\_\+place})
+\begin{DoxyCompactList}\small\item\em la procédure permet de d\textquotesingle{}initialiser la grille avec des 0 \end{DoxyCompactList}\item 
+int \hyperlink{jeu__puissance4_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \hyperlink{jeu__puissance4_8c_ab8ea4e387273c6109e08085bd9050ca7}{I\+N\+C\+O\+N\+NU} = \textquotesingle{} \textquotesingle{}
+\item 
+const char \hyperlink{jeu__puissance4_8c_aa25c2be9670ba77f0ccbad1f949dda4b}{P\+I\+O\+N\+\_\+A} = \textquotesingle{}1\textquotesingle{}
+\item 
+const char \hyperlink{jeu__puissance4_8c_ae93cbc87a0c9739844b09ca78330c000}{P\+I\+O\+N\+\_\+B} = \textquotesingle{}2\textquotesingle{}
+\item 
+const int \hyperlink{jeu__puissance4_8c_a726ca55999a94f809283ac13bf98aef1}{V\+I\+DE} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des macros}
+\mbox{\Hypertarget{jeu__puissance4_8c_aa982f591a5bf70cd78d6e8b480f9e6d7}\label{jeu__puissance4_8c_aa982f591a5bf70cd78d6e8b480f9e6d7}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!C\+O\+L\+O\+N\+E\+\_\+\+D\+E\+B\+UT@{C\+O\+L\+O\+N\+E\+\_\+\+D\+E\+B\+UT}}
+\index{C\+O\+L\+O\+N\+E\+\_\+\+D\+E\+B\+UT@{C\+O\+L\+O\+N\+E\+\_\+\+D\+E\+B\+UT}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{C\+O\+L\+O\+N\+E\+\_\+\+D\+E\+B\+UT}{COLONE\_DEBUT}}
+{\footnotesize\ttfamily \#define C\+O\+L\+O\+N\+E\+\_\+\+D\+E\+B\+UT~\hyperlink{jeu__puissance4__final_8c_a8f8cd1540fdc837cee034be5be8c2aa5}{N\+B\+C\+OL}/2}
+
+\mbox{\Hypertarget{jeu__puissance4_8c_a8f8cd1540fdc837cee034be5be8c2aa5}\label{jeu__puissance4_8c_a8f8cd1540fdc837cee034be5be8c2aa5}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!N\+B\+C\+OL@{N\+B\+C\+OL}}
+\index{N\+B\+C\+OL@{N\+B\+C\+OL}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{N\+B\+C\+OL}{NBCOL}}
+{\footnotesize\ttfamily \#define N\+B\+C\+OL~7}
+
+\mbox{\Hypertarget{jeu__puissance4_8c_aa5a2696e1a14c0a6c8ef2dde2b2c38fa}\label{jeu__puissance4_8c_aa5a2696e1a14c0a6c8ef2dde2b2c38fa}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!N\+B\+L\+IG@{N\+B\+L\+IG}}
+\index{N\+B\+L\+IG@{N\+B\+L\+IG}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{N\+B\+L\+IG}{NBLIG}}
+{\footnotesize\ttfamily \#define N\+B\+L\+IG~6}
+
+
+
+\subsection{Documentation des définitions de type}
+\mbox{\Hypertarget{jeu__puissance4_8c_aa86915394a89b24de2eb81c8a08d99fd}\label{jeu__puissance4_8c_aa86915394a89b24de2eb81c8a08d99fd}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!t\+\_\+jeu@{t\+\_\+jeu}}
+\index{t\+\_\+jeu@{t\+\_\+jeu}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{t\+\_\+jeu}{t\_jeu}}
+{\footnotesize\ttfamily t\+\_\+jeu}
+
+
+
+un tableau de tableau d\textquotesingle{}entier, qui est la grille de jeu 
+
+\mbox{\Hypertarget{jeu__puissance4_8c_afbde29876e15450c0c1aca832d0fd8b0}\label{jeu__puissance4_8c_afbde29876e15450c0c1aca832d0fd8b0}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!t\+\_\+place@{t\+\_\+place}}
+\index{t\+\_\+place@{t\+\_\+place}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{t\+\_\+place}{t\_place}}
+{\footnotesize\ttfamily t\+\_\+place}
+
+
+
+un tableau de entier, qui affiche le numéro des colonnes au dessus de la grille de jeu 
+
+
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{jeu__puissance4_8c_aed79abfebda75486743de9c2342778d0}\label{jeu__puissance4_8c_aed79abfebda75486743de9c2342778d0}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!afficher@{afficher}}
+\index{afficher@{afficher}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void afficher (\begin{DoxyParamCaption}\item[{\hyperlink{jeu__puissance4__final_8c_a080cb8410ac2de392624bdcd0ed1c6d2}{t\+\_\+jeu}}]{tab,  }\item[{\hyperlink{jeu__puissance4__final_8c_a9a3350085ef47ec63152b63a1e79fa17}{t\+\_\+place}}]{tab1,  }\item[{char}]{pion,  }\item[{int}]{colonne }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{jeu__puissance4_8c_a8b1018abd2ef5f0b2e95bf7c21b133f9}\label{jeu__puissance4_8c_a8b1018abd2ef5f0b2e95bf7c21b133f9}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!grille\+Pleine@{grille\+Pleine}}
+\index{grille\+Pleine@{grille\+Pleine}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{grille\+Pleine()}{grillePleine()}}
+{\footnotesize\ttfamily bool grille\+Pleine (\begin{DoxyParamCaption}\item[{\hyperlink{jeu__puissance4__final_8c_a080cb8410ac2de392624bdcd0ed1c6d2}{t\+\_\+jeu}}]{tab }\end{DoxyParamCaption})}
+
+
+
+la fonction regarde si la grille est pleine 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & \+: t\+\_\+jeu le tableau du jeu de puissance 4 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un booléen qui indique si la grille est pleine ou non 
+\end{DoxyReturn}
+\mbox{\Hypertarget{jeu__puissance4_8c_a8837868eee506e930fdc41f8bc3a9fcc}\label{jeu__puissance4_8c_a8837868eee506e930fdc41f8bc3a9fcc}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!init\+Grille@{init\+Grille}}
+\index{init\+Grille@{init\+Grille}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{init\+Grille()}{initGrille()}}
+{\footnotesize\ttfamily void init\+Grille (\begin{DoxyParamCaption}\item[{\hyperlink{jeu__puissance4__final_8c_a080cb8410ac2de392624bdcd0ed1c6d2}{t\+\_\+jeu}}]{tab,  }\item[{\hyperlink{jeu__puissance4__final_8c_a9a3350085ef47ec63152b63a1e79fa17}{t\+\_\+place}}]{tab\+Haut }\end{DoxyParamCaption})}
+
+
+
+la procédure permet de d\textquotesingle{}initialiser la grille avec des 0 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & \+: t\+\_\+jeu le tableau du jeu de puissance 4 \\
+\hline
+{\em tab\+Haut} & \+: t\+\_\+place le tableau au dessus de la grille de jeu contenant les numéros des colones \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu__puissance4_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{jeu__puissance4_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!main@{main}}
+\index{main@{main}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentation des variables}
+\mbox{\Hypertarget{jeu__puissance4_8c_ab8ea4e387273c6109e08085bd9050ca7}\label{jeu__puissance4_8c_ab8ea4e387273c6109e08085bd9050ca7}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!I\+N\+C\+O\+N\+NU@{I\+N\+C\+O\+N\+NU}}
+\index{I\+N\+C\+O\+N\+NU@{I\+N\+C\+O\+N\+NU}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{I\+N\+C\+O\+N\+NU}{INCONNU}}
+{\footnotesize\ttfamily const char I\+N\+C\+O\+N\+NU = \textquotesingle{} \textquotesingle{}}
+
+\mbox{\Hypertarget{jeu__puissance4_8c_aa25c2be9670ba77f0ccbad1f949dda4b}\label{jeu__puissance4_8c_aa25c2be9670ba77f0ccbad1f949dda4b}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!P\+I\+O\+N\+\_\+A@{P\+I\+O\+N\+\_\+A}}
+\index{P\+I\+O\+N\+\_\+A@{P\+I\+O\+N\+\_\+A}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{P\+I\+O\+N\+\_\+A}{PION\_A}}
+{\footnotesize\ttfamily const char P\+I\+O\+N\+\_\+A = \textquotesingle{}1\textquotesingle{}}
+
+\mbox{\Hypertarget{jeu__puissance4_8c_ae93cbc87a0c9739844b09ca78330c000}\label{jeu__puissance4_8c_ae93cbc87a0c9739844b09ca78330c000}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!P\+I\+O\+N\+\_\+B@{P\+I\+O\+N\+\_\+B}}
+\index{P\+I\+O\+N\+\_\+B@{P\+I\+O\+N\+\_\+B}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{P\+I\+O\+N\+\_\+B}{PION\_B}}
+{\footnotesize\ttfamily const char P\+I\+O\+N\+\_\+B = \textquotesingle{}2\textquotesingle{}}
+
+\mbox{\Hypertarget{jeu__puissance4_8c_a726ca55999a94f809283ac13bf98aef1}\label{jeu__puissance4_8c_a726ca55999a94f809283ac13bf98aef1}} 
+\index{jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}!V\+I\+DE@{V\+I\+DE}}
+\index{V\+I\+DE@{V\+I\+DE}!jeu\+\_\+puissance4.\+c@{jeu\+\_\+puissance4.\+c}}
+\subsubsection{\texorpdfstring{V\+I\+DE}{VIDE}}
+{\footnotesize\ttfamily const int V\+I\+DE = 0}
+

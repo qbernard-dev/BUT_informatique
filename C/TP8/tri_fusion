@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX 10
+
+void tri_fusion(int[],int);
+void fusion(int[],int,int,int);
+void tri_fusion_bis(int[],int,int);
+void tri_fusion(int tableau[],int longueur){
+    if (longueur>0){
+        tri fusion bis(tableau,0,longueur-1);
+    }
+}
+
+int main(){
+    int unTab[MAX];
+    remplir(unTab,MAX);
+    tri_fusion(unTab,MAX);
+    afficher(unTab,MAX);
+    return 0;
+}
+
+void tri_fusion_bis(int tableau[],int deb,int fin){
+    int milieu;
+    if (deb<fin){
+        milieu=(fin+deb)/2;
+        tri_fusion_bis(tableau,deb,milieu);
+        tri_fusion_bis(tableau,milieu+1,fin);
+        fusion(tableau,deb,milieu,fin);
+    }
+}
+
+void fusion(int tableau[],int deb1,int fin1,int fin2) {
+    int table1[fin1-deb1+1];
+    int deb2=fin1+1;
+    int compt1=deb1;
+    int compt2=deb2;
+    int i;
+    bool continue=true;
+    for(i=deb1;i<=fin1;i++){
+        table1[i-deb1]=tableau[i];
+    }
+    i=deb1;
+    while ((i<=fin2) && continue){
+    if (compt1==deb2) {
+        continue=false;
+    } else if (compt2==(fin2+1)) {
+        tableau[i]=table1[compt1-deb1];
+        compt1++;
+    }else if (table1[compt1-deb1]<tableau[compt2]){
+        tableau[i]=table1[compt1-deb1];
+        compt1++;
+    } else {
+        tableau[i]=tableau[compt2];
+        compt2++;
+    }
+    i++;
+}

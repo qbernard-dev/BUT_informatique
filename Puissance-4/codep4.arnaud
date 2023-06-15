@@ -1,0 +1,79 @@
+constante entier NL := 6;
+constante entier NC := 7;
+
+programme puissance 4 c'est
+    type tableau2D = tableau[1..NL, 1..NC] de entier;
+    
+    /* 
+    elle prend en paramètre d'entré le nom du joueur
+    procédure qui permet  de vérifier si le nom saisie est corret si ce n'est pas le cas elle demande de recommncez jusqu'a se soit correct
+    */
+    procédure verifNom(entF nom_j : chaine[20]);
+
+    /*
+    elle prend en paramètre d'entré/sorite le tableau du jeu
+    procédure qui permet d'intialisé le tableau avec que des 0
+    */
+    procédure grille(entF/sortF tab : tableau2D); 
+
+    /* 
+    procédure qui permet d'afficher la grille avec les #
+    met le # en rouge quand c'est le piont du j1 et le met en jaune quand c'est le j2
+    */
+    procédure afficheGrille(entF/sortF tab : tableau2D);
+
+    /*
+    procédure qui demande au joueur de placer son piont et se fait vérifier par la procédure vérifCologne 
+    met un 1 dans la grille non visible quand le joueur 1 joue et un 2 quand c'est le joueur 2
+    entre le tour du joeueur 1 et 2 je vérifie si il n'y pas un gagnant ou un égalité, la même chose à la fin du tour du joueur 2
+    */
+    procédure tour(entF joueur, entF/sortF tab : tableau2D);
+
+    /*
+    procédure qui permet de vérifier si ce qui est saisie est bien un chiffre entre 1 et 7 et que la colone peut encore avoir des pionts
+    si ce n'est pas le cas le joueur doit recommencer 
+    */
+    procédure verifColone(entF tab : tableau2D);
+
+    /*
+    procédure qui permet de vérifier le cas de l'égalité, elle regarde les colognes si elles sont toutes pleines alors il y a égalité
+    gagnant prend en valeur "égalité" 
+    */
+   
+    procédure verifGagnant(entF tab : tableau2D, entF joueur, entF/sortF fin);
+
+    /*
+    procédure qui permet de vérifié si il y a un gagnant et retourne le nom du joueur gagnant
+    pour un gagnant un ligne pour le j1 si la ligne est égale à 4 et pour j2 la ligne doit être égale à 8
+    pour un gagnant en cologne le même principe 
+    pour un gagnant en diagonale le même prinicpe mais il faudra augementer de 1 la cologne et l'indice i +1 ou -1
+    pour une égalité on utilise la procédure verifEgalite
+    */
+ 
+début
+    j1 ,j2, gagnant : chaine[20];
+    fin_jeux : booléen;
+    fin_jeux = FAUX;
+    écrireEcran(
+   ___  __  _________________   _  ___________  ____
+  / _ \/ / / /  _/ __/ __/ _ | / |/ / ___/ __/ / / /
+ / ___/ /_/ // /_\ \_\ \/ __ |/    / /__/ _/  /_  _/
+/_/   \____/___/___/___/_/ |_/_/|_/\___/___/   /_/  
+
+    );
+    écrireEcran("Quelle votre nom Joueur 1 : ");
+    lireClavier(j1);
+    verifNom(j1);
+    écrireEcran("Quelle votre nom Joueur 2 : ");
+    lireClavier(j2);
+    verifNom(j2);
+    afficheGrille(tableau2D);
+    tant que (fin_jeux != VRAI) faire
+        tour(j1, tableau2D);                    // debut tour du joueur 1
+        afficheGrille(tableau2D);
+        verifGagnant(tableau2D, j1, fin_jeux);  
+        tour(j2, tableau2D);                    // debut tour du joueur 2
+        afficheGrille(tableau2D);
+        verifGagnant(tableau2D, j2, fin_jeux);
+    finfaire
+fin

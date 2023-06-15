@@ -1,0 +1,119 @@
+// 1.Quels sont les noms des produits commercialisés par l’entreprise ? 
+PRODUIT{NOMP}
+
+// 2.Quels sont les produits originaires de ’Dijon’ ?
+(PRODUIT where ORIGINE = DVILLE("Dijon"))
+
+// 3.Quels sont les noms des produits originaires de ’Dijon’ ?
+(PRODUIT where ORIGINE = DVILLE("Dijon")){NOMP}
+
+// 4.Quels sont les numéros des fournisseurs qui fournissent quelque chose ?
+FOURNITURE{NOFOUR}
+
+// 5.Quels sont les numéros des fournisseurs qui ne fournissent rien ?
+FOURNISSEUR{NOFOUR}
+MINUS
+FOURNITURE{NOFOUR}
+
+// 6.Quels sont les numéros des fournisseurs qui fournissent au moins le produit ’P6’ ?
+(FOURNITURE where NOPRODUIT = DNOPRODUIT("P6")){NOFOUR}
+
+// 7.Quels sont les numéros des fournisseurs qui fournissent quelque chose d’autre que ’P6’ ?
+(FOURNITURE where NOPRODUIT <> DNOPRODUIT("P6")){NOFOUR}
+
+// 8.Quels sont les numéros des fournisseurs qui ne fournissent pas ’P6’ ?
+FOURNISSEUR{NOFOUR}
+MINUS
+(FOURNITURE where NOPRODUIT = DNOPRODUIT("P6")){NOFOUR}
+
+// 9.Quels sont les numéros des fournisseurs qui fournissent quelque chose mais pas ’P6’ ?
+FOURNITURE{NOFOUR}
+MINUS
+(FOURNITURE where NOPRODUIT = DNOPRODUIT("P6")){NOFOUR}
+
+// 10.Quels sont les numéros des Fournisseurs qui ne fournissent que ’P6’ ?
+FOURNITURE{NOFOUR}
+MINUS
+(FOURNITURE where NOPRODUIT <> DNOPRODUIT("P6")){NOFOUR}
+
+// 11.Quels sont les numéros des fournisseurs qui fournissent ’P4’ ou ’P6’ ?
+(FOURNITURE where NOPRODUIT = DNOPRODUIT("P6") or NOPRODUIT = DNOPRODUIT("P4")){NOFOUR}
+
+// 12.Quels sont les numéros des fournisseurs qui fournissent ’P4’ et ’P6’ ?
+(FOURNITURE where NOPRODUIT = DNOPRODUIT("P6")){NOFOUR}
+intersect
+(FOURNITURE where NOPRODUIT = DNOPRODUIT("P4")){NOFOUR}
+
+// 13.Quels sont les numéros des fournisseurs qui ne fournissent ni ’P4’ ni ’P6’ ?
+FOURNISSEUR{NOFOUR}
+MINUS
+(FOURNITURE where NOPRODUIT = DNOPRODUIT("P6") or NOPRODUIT = DNOPRODUIT("P4")){NOFOUR}
+
+// 14.Quels sont les numéros et noms des fournisseurs qui fournissent ’P6’ ?
+((FOURNISSEUR join FOURNITURE)} where NOPRODUIT = DNOPRODUIT("P6")){NOFOUR, NOMF}
+
+// 15.Quels sont les numéros et noms des fournisseurs qui ne fournissent ni ’P4’ ni ’P6’ ?
+FOURNISSEUR{NOFOUR}
+MINUS
+(FOURNITURE where NOPRODUIT = DNOPRODUIT("P6") or NOPRODUIT = DNOPRODUIT("P4")){NOFOUR}
+join
+FOURNISSEUR{NOFOUR, NOMF}
+
+// 16.Quels sont les numéros,noms et villes des fournisseurs qui fournissent au moins un produit originaire de leur ville ?
+(FOURNISSEUR join FOURNITURE join PRODUIT
+where VILLE = ORIGINE)
+{NOFOUR, NOMF, VILLE}
+
+// 17.Quels sont les produits qui sont de même couleur ? Le résultat sera présenté par des couples de numéros de produits.
+((
+    PRODUIT {NOPRODUIT, COULEUR} RENAME {NOPRODUIT as NOP1}
+    join
+    PRODUIT {NOPRODUIT, COULEUR} RENAME {NOPRODUIT as NOP2}
+)where NOP1 < NOP2)
+{NOP1, NOP2}
+
+// 18.Quels sont les produits de même couleur que la salade (certaines salades sont rouges, d’autres vertes ...) ?
+with (
+    COULEUR_SALADE := (PRODUIT
+                        where NOMP = DNOMP('Salade'))
+                        {COULEUR}
+):
+COULEUR_SALADE join PRODUIT
+
+// 19.Quels sont les numéros des fournisseurs qui fournissent des produits verts ou rouges ?
+(FOURNITURE join PRODUIT
+where COULEUR = FCOULEUR('Vert')
+    or COULEUR = DCOULEUR('Rouge'))
+{NOFOUR}
+
+// 20.Quels sont les numéros des fournisseurs qui fournissent des produits verts et rouges ?
+(FOURNITURE join PRODUIT
+where COULEUR = DCOULEUR('Vert')){NOFOUR}
+join
+(FOURNITURE join PRODUIT
+where COULEUR = DCOULEUR('Rouge')){NOFOUR}
+
+// 21.Quels sont les numéros des fournisseurs qui fournissent des produits verts et des produits rouges (interdiction d’utiliseR l’opérateur ’intersect’) ?
+
+
+// 22.Quels sont les numéros et noms des fournisseurs qui ne fournissent pas de produit vert ?
+FOURNISSEUR{NOFOUR, NOMF}
+MINUS 
+(FORNISSEUR join FORUNITURE join PRODUIT 
+where COULEUR = DCOULEUR('Vert')
+{NOFOUR, NOMF}
+
+// 23.Quels sont les numéros et noms des fournisseurs qui ne fournissent que des produits verts ?
+(FOURNISSEUR join FOURNITURE){NOFOUR, NOMF}
+MINUS
+(FOURNISSEUR join FORUNITURE join PORDUIT 
+where COULEUR <> DCOULEUR('Vert')
+){NOFOUR, NOMF}
+
+// 24.Quels sont les numéros et noms des fournisseurs qui ne fournissent que des produits verts ou jaunes ?
+(FORNISSEUR join FOURNITURE)
+{NOFOUR, NOMF}
+MINUS(FOURNISSEUR join FOURNITURE join PRODUIT
+where COULEUR <> DCOULEUR('Vert')
+and COULEUR <> DCOULEUR('Jaune'))
+{NOFOUR, NOMF}

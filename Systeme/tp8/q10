@@ -1,0 +1,10 @@
+#!/bin/bash
+nom=folder
+for lettre in A B C
+do
+mkdir $nom$lettre
+	for fic in TODO.txt README.md main.c
+	do
+	touch $nom$lettre/$fic
+	done
+done

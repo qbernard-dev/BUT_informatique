@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Puissance 4: Référence du fichier jeu_puissance4.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Puissance 4
+   </div>
+   <div id="projectbrief">Documentation doxygene du jeu de puissance 4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier jeu_puissance4.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de jeu_puissance4.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="jeu__puissance4_8c__incl.png" border="0" usemap="#jeu__puissance4_8c" alt=""/></div>
+<map name="jeu__puissance4_8c" id="jeu__puissance4_8c">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aa982f591a5bf70cd78d6e8b480f9e6d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#aa982f591a5bf70cd78d6e8b480f9e6d7">COLONE_DEBUT</a>&#160;&#160;&#160;<a class="el" href="jeu__puissance4__final_8c.html#a8f8cd1540fdc837cee034be5be8c2aa5">NBCOL</a>/2</td></tr>
+<tr class="separator:aa982f591a5bf70cd78d6e8b480f9e6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8cd1540fdc837cee034be5be8c2aa5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#a8f8cd1540fdc837cee034be5be8c2aa5">NBCOL</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a8f8cd1540fdc837cee034be5be8c2aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a2696e1a14c0a6c8ef2dde2b2c38fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#aa5a2696e1a14c0a6c8ef2dde2b2c38fa">NBLIG</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:aa5a2696e1a14c0a6c8ef2dde2b2c38fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:aa86915394a89b24de2eb81c8a08d99fd"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#aa86915394a89b24de2eb81c8a08d99fd">t_jeu</a>[<a class="el" href="jeu__puissance4__final_8c.html#aa5a2696e1a14c0a6c8ef2dde2b2c38fa">NBLIG</a>-1][<a class="el" href="jeu__puissance4__final_8c.html#a8f8cd1540fdc837cee034be5be8c2aa5">NBCOL</a>-1]</td></tr>
+<tr class="memdesc:aa86915394a89b24de2eb81c8a08d99fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">un tableau de tableau d'entier, qui est la grille de jeu  <a href="#aa86915394a89b24de2eb81c8a08d99fd">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa86915394a89b24de2eb81c8a08d99fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbde29876e15450c0c1aca832d0fd8b0"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#afbde29876e15450c0c1aca832d0fd8b0">t_place</a>[<a class="el" href="jeu__puissance4__final_8c.html#a8f8cd1540fdc837cee034be5be8c2aa5">NBCOL</a>-1]</td></tr>
+<tr class="memdesc:afbde29876e15450c0c1aca832d0fd8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">un tableau de entier, qui affiche le numéro des colonnes au dessus de la grille de jeu  <a href="#afbde29876e15450c0c1aca832d0fd8b0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afbde29876e15450c0c1aca832d0fd8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:aed79abfebda75486743de9c2342778d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#aed79abfebda75486743de9c2342778d0">afficher</a> (<a class="el" href="jeu__puissance4__final_8c.html#a080cb8410ac2de392624bdcd0ed1c6d2">t_jeu</a>, <a class="el" href="jeu__puissance4__final_8c.html#a9a3350085ef47ec63152b63a1e79fa17">t_place</a>, char, int)</td></tr>
+<tr class="separator:aed79abfebda75486743de9c2342778d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1018abd2ef5f0b2e95bf7c21b133f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#a8b1018abd2ef5f0b2e95bf7c21b133f9">grillePleine</a> (<a class="el" href="jeu__puissance4__final_8c.html#a080cb8410ac2de392624bdcd0ed1c6d2">t_jeu</a>)</td></tr>
+<tr class="memdesc:a8b1018abd2ef5f0b2e95bf7c21b133f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">la fonction regarde si la grille est pleine  <a href="#a8b1018abd2ef5f0b2e95bf7c21b133f9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8b1018abd2ef5f0b2e95bf7c21b133f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8837868eee506e930fdc41f8bc3a9fcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#a8837868eee506e930fdc41f8bc3a9fcc">initGrille</a> (<a class="el" href="jeu__puissance4__final_8c.html#a080cb8410ac2de392624bdcd0ed1c6d2">t_jeu</a>, <a class="el" href="jeu__puissance4__final_8c.html#a9a3350085ef47ec63152b63a1e79fa17">t_place</a>)</td></tr>
+<tr class="memdesc:a8837868eee506e930fdc41f8bc3a9fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">la procédure permet de d'initialiser la grille avec des 0  <a href="#a8837868eee506e930fdc41f8bc3a9fcc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8837868eee506e930fdc41f8bc3a9fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab8ea4e387273c6109e08085bd9050ca7"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#ab8ea4e387273c6109e08085bd9050ca7">INCONNU</a> = ' '</td></tr>
+<tr class="separator:ab8ea4e387273c6109e08085bd9050ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25c2be9670ba77f0ccbad1f949dda4b"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#aa25c2be9670ba77f0ccbad1f949dda4b">PION_A</a> = '1'</td></tr>
+<tr class="separator:aa25c2be9670ba77f0ccbad1f949dda4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93cbc87a0c9739844b09ca78330c000"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#ae93cbc87a0c9739844b09ca78330c000">PION_B</a> = '2'</td></tr>
+<tr class="separator:ae93cbc87a0c9739844b09ca78330c000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726ca55999a94f809283ac13bf98aef1"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu__puissance4_8c.html#a726ca55999a94f809283ac13bf98aef1">VIDE</a> = 0</td></tr>
+<tr class="separator:a726ca55999a94f809283ac13bf98aef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="aa982f591a5bf70cd78d6e8b480f9e6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa982f591a5bf70cd78d6e8b480f9e6d7">&#9670;&nbsp;</a></span>COLONE_DEBUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLONE_DEBUT&#160;&#160;&#160;<a class="el" href="jeu__puissance4__final_8c.html#a8f8cd1540fdc837cee034be5be8c2aa5">NBCOL</a>/2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f8cd1540fdc837cee034be5be8c2aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8cd1540fdc837cee034be5be8c2aa5">&#9670;&nbsp;</a></span>NBCOL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NBCOL&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5a2696e1a14c0a6c8ef2dde2b2c38fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5a2696e1a14c0a6c8ef2dde2b2c38fa">&#9670;&nbsp;</a></span>NBLIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NBLIG&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des définitions de type</h2>
+<a id="aa86915394a89b24de2eb81c8a08d99fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa86915394a89b24de2eb81c8a08d99fd">&#9670;&nbsp;</a></span>t_jeu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">t_jeu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>un tableau de tableau d'entier, qui est la grille de jeu </p>
+
+</div>
+</div>
+<a id="afbde29876e15450c0c1aca832d0fd8b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbde29876e15450c0c1aca832d0fd8b0">&#9670;&nbsp;</a></span>t_place</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">t_place</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>un tableau de entier, qui affiche le numéro des colonnes au dessus de la grille de jeu </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="aed79abfebda75486743de9c2342778d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed79abfebda75486743de9c2342778d0">&#9670;&nbsp;</a></span>afficher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficher </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="jeu__puissance4__final_8c.html#a080cb8410ac2de392624bdcd0ed1c6d2">t_jeu</a>&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="jeu__puissance4__final_8c.html#a9a3350085ef47ec63152b63a1e79fa17">t_place</a>&#160;</td>
+          <td class="paramname"><em>tab1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>pion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b1018abd2ef5f0b2e95bf7c21b133f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1018abd2ef5f0b2e95bf7c21b133f9">&#9670;&nbsp;</a></span>grillePleine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool grillePleine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="jeu__puissance4__final_8c.html#a080cb8410ac2de392624bdcd0ed1c6d2">t_jeu</a>&#160;</td>
+          <td class="paramname"><em>tab</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>la fonction regarde si la grille est pleine </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>: t_jeu le tableau du jeu de puissance 4 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un booléen qui indique si la grille est pleine ou non </dd></dl>
+
+</div>
+</div>
+<a id="a8837868eee506e930fdc41f8bc3a9fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8837868eee506e930fdc41f8bc3a9fcc">&#9670;&nbsp;</a></span>initGrille()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initGrille </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="jeu__puissance4__final_8c.html#a080cb8410ac2de392624bdcd0ed1c6d2">t_jeu</a>&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="jeu__puissance4__final_8c.html#a9a3350085ef47ec63152b63a1e79fa17">t_place</a>&#160;</td>
+          <td class="paramname"><em>tabHaut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>la procédure permet de d'initialiser la grille avec des 0 </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>: t_jeu le tableau du jeu de puissance 4 </td></tr>
+    <tr><td class="paramname">tabHaut</td><td>: t_place le tableau au dessus de la grille de jeu contenant les numéros des colones </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="ab8ea4e387273c6109e08085bd9050ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ea4e387273c6109e08085bd9050ca7">&#9670;&nbsp;</a></span>INCONNU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char INCONNU = ' '</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa25c2be9670ba77f0ccbad1f949dda4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa25c2be9670ba77f0ccbad1f949dda4b">&#9670;&nbsp;</a></span>PION_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char PION_A = '1'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae93cbc87a0c9739844b09ca78330c000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93cbc87a0c9739844b09ca78330c000">&#9670;&nbsp;</a></span>PION_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char PION_B = '2'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a726ca55999a94f809283ac13bf98aef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a726ca55999a94f809283ac13bf98aef1">&#9670;&nbsp;</a></span>VIDE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int VIDE = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

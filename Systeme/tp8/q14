@@ -1,0 +1,3 @@
+#!/bin/bash
+read -p "entrez un texte ? " tex
+egrep $tex < prod | wc -l 

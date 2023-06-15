@@ -1,0 +1,129 @@
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:102:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+dnsmasq:x:104:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+ntp:x:105:112::/nonexistent:/usr/sbin/nologin
+messagebus:x:106:113::/nonexistent:/usr/sbin/nologin
+tss:x:107:114:TPM2 software stack,,,:/var/lib/tpm:/bin/false
+_rpc:x:108:65534::/run/rpcbind:/usr/sbin/nologin
+statd:x:109:65534::/var/lib/nfs:/usr/sbin/nologin
+usbmux:x:110:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+saned:x:111:119::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:112:120:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:113:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+colord:x:114:121:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+nm-openconnect:x:115:122:NetworkManager OpenConnect plugin,,,:/var/lib/NetworkManager:/usr/sbin/nologin
+pulse:x:116:123:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+avahi:x:117:126:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+lightdm:x:118:128:Light Display Manager:/var/lib/lightdm:/bin/false
+secours:x:900:900::/home/secours:/bin/bash
+adminloc:x:901:901:adminloc,,,:/home/adminloc:/bin/bash
+puppet:x:119:129:Puppet configuration management daemon,,,:/var/lib/puppet:/usr/sbin/nologin
+papercut:x:902:903::/usr/local/papercut:/bin/sh
+postgres:x:121:130:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+_chrony:x:122:131:Chrony daemon,,,:/var/lib/chrony:/usr/sbin/nologin
+sshd:x:120:65534::/run/sshd:/usr/sbin/nologin
+nslcd:x:123:132:nslcd name service LDAP connection daemon,,,:/var/run/nslcd/:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+dockremap:x:500000:500000::/home/dockremap:/bin/false
+dockremap-user:x:501000:501000::/home/dockremap-user:/bin/false
+x2gouser:x:124:133::/var/lib/x2go:/bin/false
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:secours,adminloc
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:secours,adminloc
+fax:x:21:
+voice:x:22:
+cdrom:x:24:secours,adminloc
+floppy:x:25:secours,adminloc
+tape:x:26:
+sudo:x:27:adminloc
+audio:x:29:pulse,secours,adminloc
+dip:x:30:secours,adminloc
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:secours,adminloc
+sasl:x:45:
+plugdev:x:46:secours,adminloc
+staff:x:50:
+games:x:60:
+users:x:100:secours,adminloc,zebui
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-timesync:x:102:
+systemd-network:x:103:
+systemd-resolve:x:104:
+input:x:105:adminloc
+kvm:x:106:
+render:x:107:
+crontab:x:108:
+netdev:x:109:secours,adminloc
+ssl-cert:x:110:postgres
+lpadmin:x:111:secours,adminloc
+ntp:x:112:
+messagebus:x:113:
+tss:x:114:
+mlocate:x:115:
+ssh:x:116:
+bluetooth:x:117:
+scanner:x:118:saned,secours,adminloc
+saned:x:119:
+nm-openvpn:x:120:
+colord:x:121:
+nm-openconnect:x:122:
+pulse:x:123:
+pulse-access:x:124:
+vboxsf:x:125:secours,adminloc
+avahi:x:126:
+sambashare:x:127:
+lightdm:x:128:
+secours:x:900:
+adminloc:x:901:
+fuse:x:902:root
+puppet:x:129:
+papercut:x:903:
+postgres:x:130:
+_chrony:x:131:
+nslcd:x:132:
+docker:x:998:
+systemd-coredump:x:999:
+dockremap-user:x:501000:
+x2gouser:x:133:zebui,secours
+maintenance:x:1000:zebui,infoetu1,testeur,mmietu

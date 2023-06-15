@@ -1,0 +1,143 @@
+//  EXERCICE  : Partitionnement (summarize) et autres requ�tes complexes
+//**********************************************************************
+//
+// Calculez les valeurs de relations suivantes :
+
+
+// 43.
+// par numero d'article, la somme des quantites commandees et la plus grande quantite commandée
+
+
+
+// 44.
+//Pour chaque article, son nom, la plus petite quantite commandee,
+//la plus grande et la moyenne des quantites commandees.
+
+
+
+
+
+// 45.
+//Pour chaque article, son nom, la plus petite quantite commandee,
+//la plus grande et la moyenne des quantites commandees pour les
+//commandes passees entre le 16/01/2013 et le 16/03/2013.
+
+
+
+
+// 46.
+//Numéro des articles sujets à au moins 2 commandes
+
+
+
+
+// 47.
+//Numéro des articles sujets à au plus 3 commandes
+
+
+
+// 48.
+//Numéro des articles sujets à exactement 2 commandes
+
+
+
+
+// 49.
+//Nom des articles dont la somme des quantites commandees
+//excède 100
+
+
+
+
+
+//
+// 49bis. 
+// Nom et numéro des clients ayant passé au moins 2 commandes
+// du même produit
+
+
+
+
+// 50.
+//Nom et numéro des clients ayant passé au moins 2 commandes
+//de produits différents
+
+
+
+// 51.
+//la moyenne des quantites commandees de chaque article
+//de type Litterature
+
+
+
+// 52.
+//moyenne des quantites commandées pour les articles
+//sujets à au moins trois commandes
+
+
+
+// 53.
+//numéro des articles dont la moyenne des quantites commandees
+//est superieure a 15
+
+
+
+
+// 54.
+//Nom des clients ayant effectué au moins 3 commandes.
+
+
+
+
+
+// 55.
+//Date de la dernière commande de chaque client
+
+
+
+
+// 56.
+//Quelle est la quantite totale commandee par mois d'activite.
+//Les résultats seront presentés chronologiquement.
+
+
+
+
+// 57.
+//le nom des aticles dont la quantité en stock est maximale (est la plus grande)
+
+			
+
+		
+
+
+// 58.
+// le nom des articles dont au moins une commande est de quantite commandee
+// superieure a la quantite en stock
+
+
+
+
+// 59.
+//  nom des articles dont la somme des quantites commandees
+//  est superieure a la quantite en stock
+
+
+
+// 60.
+//  nom des articles tels que toutes les commandes sont de quantite
+//  superieure a celle en stock
+
+
+
+// 61.
+// numero des clients qui ont commande tous les livres de philosophie
+
+
+
+// 62.
+//  Quels sont les clients qui ont pass� le plus de commandes
+//  au cours du premier trimestre de l'ann�e 2013
+
+
+

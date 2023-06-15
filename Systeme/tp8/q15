@@ -1,0 +1,10 @@
+#!/bin/bash
+read -p "entrez un texte ? " tex
+egrep $tex < prod
+val=wc -l
+if [ $val = 0 ] 
+then
+echo Aucun
+else
+echo $val
+fi

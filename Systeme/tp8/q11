@@ -1,0 +1,4 @@
+#!/bin/bash
+cc -Wall prog.c
+./a.out
+echo $?

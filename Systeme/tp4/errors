@@ -1,0 +1,2 @@
+cat: /etc/shadow: Permission non accordée
+cat: /etc/gshadow: Permission non accordée

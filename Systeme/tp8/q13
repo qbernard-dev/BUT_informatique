@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "entrez un texte ? " tex
+read -p "entrez un num ? " num
+head -$num < prod| egrep $tex 

@@ -1,0 +1,3 @@
+#!/bin/bash
+read -p "nom du fichier ? " fichier
+touch $fichier'_old'
