@@ -1,9 +1,9 @@
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-public class MainExo2 extends Application{
+public class MainFenCalulette extends Application{
 	public void start(Stage primaryStage){
-		primaryStage = new MaFenetre ();
+		primaryStage = new FenCalculette ();
 		primaryStage.show();
 		
 	}

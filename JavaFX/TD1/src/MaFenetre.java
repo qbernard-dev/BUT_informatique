@@ -1,5 +1,8 @@
-import javax.swing.GroupLayout.Group;
 
+
+import javafx.scene.Group;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
@@ -38,6 +41,7 @@ public class MaFenetre extends Stage{
 		r4.setFill(Color.PURPLE);
 		
 		horizon.getChildren().addAll(c1, r1);
+		 return horizon;
 		
 	}
 }
