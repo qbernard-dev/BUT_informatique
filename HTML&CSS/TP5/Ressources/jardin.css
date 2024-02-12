@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f6f8ca;
+    padding: 0.8em;
+    color: #f6f8ca;
+}
+
+h1, h2{
+    font-family: "Roboto";
+}
+
+main{
+    font-size: 1em;
+}
+
+h1{
+    font-size: 4em;
+    color: #1f8a70;
+}
+
+footer{
+    font-size: 0.8em;
+}
+
+header,footer,article,nav, section + article{
+    background-color: #1f8a70;
+    padding: 0.8em;
+    margin: 0.5em;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+img{
+    margin: 0.5em 1em 0.5em;
+    box-shadow: 5px 5px 3px #f6f8ca;
+}
+
+header ul li{
+    width: 7em;
+}
+
+a:hover{
+    background-color: #1f8a70;
+    color: #f6f8ca;
+}
+
+h2{
+    font-weight: bold;
+    color: #f6f8ca;
+}

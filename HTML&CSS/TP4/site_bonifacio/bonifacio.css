@@ -1,0 +1,116 @@
+main{
+    width: 50em;
+    height: auto;
+    background-color: #9cf;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 0 auto;
+    margin-left: 15em;
+}
+
+nav{ 
+    background-color: #69f;
+    width: 12em;
+    height: 15em;
+    border: solid 1px black ;
+    position: fixed;
+    top: 6em;
+}
+
+a{
+    color: blue;
+    text-align: start;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+header{
+    background-color: #69f;
+    padding: 1em;
+}
+
+footer{
+    padding: 5px;
+    background-color: #69f;
+    width: 92%;
+    height: 20em;
+    margin: 1em;
+}
+
+
+body > main+aside{
+    background-color: #69f;
+    width: 4.5em;
+    text-align: center;
+    padding: 1.5em 1em;
+    border: solid 1px black ;
+    position: absolute;
+        right: 0px;
+        top: 20em;
+}
+
+main > aside{
+    padding: 1em;
+    width: 48em;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+main section{
+    padding-top: 3em;
+}
+
+main > section > figure{
+    float: right;
+}
+
+main > section > article{
+    justify-content: left;
+    text-align: justify;
+}
+
+main > section > figure > figcaption{
+    text-align: center;
+}
+
+body > nav > h2{
+    text-align: center;
+}
+
+nav > ul{
+    padding: 0;
+}
+
+ul > li{
+    list-style: url(./images/maure.png) disc inside;
+}
+
+header > figure{
+    display: inline-block;
+    margin: 0px;
+}
+
+main > footer > img{
+    position: absolute;
+    padding: 5em 23em;
+    z-index: 1;
+}
+
+main > footer > div{
+    position: absolute;
+    padding-left: 10em;
+    z-index: 2;
+}
+
+main > section > article > h2{
+    border-left: 10px double rgb(34, 144, 255);
+}

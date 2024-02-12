@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Propriétés FlexBox</title>
+    <style type="text/css">
+        @font-face {
+    font-family: 'mastoc';
+    src: url('./mastoc-webfont.woff') format('woff2'),
+         url('./mastoc-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+        article,
+        h1,
+        h2 {
+            margin: 0.5em;
+            padding: 0.25em;
+            border-radius: 0.5em;
+        }
+
+        body {
+            font-family: mastoc,arial,sans-serif;
+            text-align: center;
+            background-color: #000;
+        }
+
+        h2 {
+            background-color: #47b9d7;
+        }
+
+        h1 {
+            background-color: #466dd7;
+        }
+
+        article {
+            background-color: #52f7ee;
+            flex-basis: 10em;
+        }
+
+        #art3{
+            flex-grow: 2;
+            text-align: start
+        }
+        #art2 {
+            height: 10em;
+            flex-shrink: 0;
+            text-align: start;
+        }
+
+        #art1 {
+            height: 6em;
+            flex-grow: 1;
+            text-align: start;
+        }
+        header{
+            color: #000;
+            background-color: #47b9d7;
+            margin: 0.5em;
+            padding: 0.25em;
+            border-radius: 0.5em;
+        }
+        main{
+            color: #000;
+            background-color: #466dd7;
+            margin: 0.5em;
+            padding: 0.25em;
+            border-radius: 0.5em;
+        }
+        footer{
+            color: #000;
+            background-color: #47b9d7;
+            margin: 0.5em;
+            padding: 0.25em;
+            border-radius: 0.5em;
+        }
+        section{
+            color: #000;
+            display : flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            align-content: flex-end;
+            flex-wrap: wrap;
+        }
+        /*------------------------------------------------------------------*/
+        /*	                      POSITIONNEMENT	FLEX	     			*/
+        /*------------------------------------------------------------------*/
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>L'Egypte</h1>
+    </header>
+    <main>
+        <h2>Les Pharaons egyptiens</h2>
+    <section>
+        <article id="art1">
+            <h3>Toutânkhamon</h3>
+        </article>
+        <article id="art2">
+            <h3>Ramsès</h3>
+        </article>
+        <article id="art3">
+            <h3>Cléopâtre</h3>
+        </article>
+    </section>
+    </main>
+    <footer>
+        <address>Webmaster : <a href="mailto:nom.etudiant@etudiant.univ-rennes1.fr">nom.etudiant@etudiant.univ-rennes1.fr</a></address>
+    </footer>
+</body>
+
+</html>
