@@ -1,0 +1,37 @@
+<!--EXO PRESENT DANS LE PDF SUR TEAMS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../../../../../quent/OneDrive/Documents/jquerry.js"></script>
+</head>
+<body>
+    <h1>Diplômes</h1>
+    <article id="un" class="bloc">
+        <h2>Diplômes</h2>
+        <p>Bac S</p>
+        <p>BUT</p>
+    </article>
+    <article id="deux" class="bloc">
+        <h2>Langages</h2>
+        <p>CSS</p>
+        <p>SCSS</p>
+    </article>
+</body>
+</html>
+
+<script>
+    let les_blocs = $(".bloc");
+    let titre_un = $("#un > :header");
+    let p_contient = $("p:contains('CSS')");
+    let dernier_p_un = $("#un > p:last-child");
+    let enfant_deux = $("#deux > :not(p)");
+
+    console.log(les_blocs);
+    console.log(titre_un);
+    console.log(p_contient);
+    console.log(dernier_p_un);
+    console.log(enfant_deux);
+</script>

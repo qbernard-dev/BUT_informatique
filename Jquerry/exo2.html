@@ -1,0 +1,30 @@
+<!--EXO PRESENT DANS LE PDF SUR TEAMS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../../../../../quent/OneDrive/Documents/jquerry.js"></script>
+</head>
+<body>
+    <h1>Diplômes</h1>
+    <article id="un" class="bloc">
+        <h2>Diplômes</h2>
+        <p>Bac S</p>
+        <p>BUT</p>
+    </article>
+    <article id="deux" class="bloc">
+        <h2>Langages</h2>
+        <p>CSS</p>
+        <p>SCSS</p>
+    </article>
+</body>
+</html>
+
+<script>
+    let rouge_un = $("#un").siblings().css('color','red');
+    let suppr_deux = $("#deux > p").remove();
+    let ajout = $("#deux").append("<p>JS</p> <p>JQuerry<p>");
+    let remplace = $(".bloc").removeClass("bloc").addClass("cv");
+</script>
